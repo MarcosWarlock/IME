@@ -70,7 +70,7 @@ Todo o projeto é <a href="http://www.significados.com.br/software-livre/">Softw
 <h4>
 <a id="instalando-as-dependencias" class="anchor" href="#instalando-as-dependencias" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalando as dependencias</h4>
 
-<p>Depos de ter instalado o <a href="https://www.python.org/downloads">Python</a> no sistema, é necessário a instalação de uma biblioteca para o funcionamento da aplicação:</p>
+<p>Após ter instalado o <a href="https://www.python.org/downloads">Python</a> no sistema, é necessário a instalação de uma biblioteca para o funcionamento da aplicação:</p>
 
 <h4>
 <a id="instalando-no-linux" class="anchor" href="#instalando-no-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalando no linux</h4>
@@ -87,7 +87,22 @@ Todo o projeto é <a href="http://www.significados.com.br/software-livre/">Softw
 <h4>
 <a id="não-gostou-do-python-não-tem-problema" class="anchor" href="#n%C3%A3o-gostou-do-python-n%C3%A3o-tem-problema" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Não gostou do <a href="https://www.python.org/downloads">Python</a>? não tem problema</h4>
 
-<p>Ative o <a href="https://www.javascript.com/">JavaScript</a> no seu navegador e rode o script</p>
+<p>Ative o <a href="https://www.javascript.com/">JavaScript</a> no seu navegador e rode o <a href="https://github.com/MarcosWarlock/IME/blob/master/download_js_IME.js">script</a> na página de provas do <a href="http://www.ime.eb.br/provas-anteriores-cfg.html">IME</a></p>
+
+<h4>
+<a id="código-em-javascript" class="anchor" href="#c%C3%B3digo-em-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Código em JavaScript</h4>
+
+<pre><code>/*
+O script deve ser executado na pagina http://www.ime.eb.br/provas-anteriores-cfg.html
+*/
+
+var links = document.querySelectorAll('a[href*="pdf"]');
+var i;
+for (i in links) 
+{
+    window.open(links[i].href);
+}
+</code></pre>
 
 <h3>
 <a id="como-eu-posso-contribuir-com-o-projeto" class="anchor" href="#como-eu-posso-contribuir-com-o-projeto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Como eu posso contribuir com o projeto?<br>
