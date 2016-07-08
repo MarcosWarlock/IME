@@ -31,7 +31,6 @@ soup = BeautifulSoup(resp, 'html.parser')
 for link in soup.find_all('a'):
     if link.get('href')[-3:] in 'pdf':
         nome = (link.get('href').split('/')[-1])
-        print(nome)
         linkd = 'http://' + url.split('/')[2] + link.get('href')
         
         with open(nome, 'wb') as f:
